@@ -1,0 +1,6 @@
+<div>
+    <input type="checkbox" [checked]="todo.isCompleted" (change)="toggleComplete()">
+    <span>{{ todo.title }} - {{ todo.description }}</span>
+    <app-delete-todo></app-delete-todo>
+ </div>
+  

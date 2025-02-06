@@ -1,0 +1,24 @@
+
+<div>
+  <app-add-todo></app-add-todo>
+</div>
+<br>
+
+<div *ngIf="todos$ | async as todos">
+  <div *ngFor="let todo of todos" class="todo-item">
+    <input type="checkbox" [checked]="todo.isCompleted" (change)="markCompleted(todo.id)">
+    <span [class.completed]="todo.isCompleted">{{ todo.title }}  {{ todo.description }}</span>
+    <button (click)="deleteTodo(todo.id)">❌</button>
+  </div>
+</div>
+<br>
+
+
+<label for="filter">Filter:</label>
+<select [(ngModel)]="filter" (ngModelChange)="setFilter(filter)" id="filter">
+  <option value="all">All</option>
+  <option value="completed">Completed</option>
+  <option value="incomplete">Incomplete</option>
+</select>
+
+<pre>{{ todos$ | async | json }}</pre>

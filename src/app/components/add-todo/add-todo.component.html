@@ -1,0 +1,6 @@
+<form (ngSubmit)="addTodo()" #taskForm="ngForm">
+  <input [(ngModel)]="newTask.title" name="title" placeholder="Title" required minlength="3">
+  <input [(ngModel)]="newTask.description" name="description" placeholder="Description">
+  <button type="submit" [disabled]="!newTask.title || newTask.title.length < 3">Add</button>
+</form>
+
