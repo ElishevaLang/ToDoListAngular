@@ -1,4 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; display:flex; display:grid;  }
+body {  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, "Helvetica Neue", sans-serif;
+align-items: center;
+justify-content: center;
+background-color: rgb(175, 247, 255); 
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+  h1 {
+    text-align: center;
+    color: rgb(3, 1, 163);
+  }
+
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: rgb(3, 1, 163);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #37d4f0;
+  }
+  input{
+    font: size 50px; ;
+  }
+
+  

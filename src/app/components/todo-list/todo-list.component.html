@@ -1,4 +1,4 @@
-
+<div class="all-app">
 <div>
   <app-add-todo></app-add-todo>
 </div>
@@ -8,7 +8,7 @@
   <div *ngFor="let todo of todos" class="todo-item">
     <input type="checkbox" [checked]="todo.isCompleted" (change)="markCompleted(todo.id)">
     <span [class.completed]="todo.isCompleted">{{ todo.title }}  {{ todo.description }}</span>
-    <button (click)="deleteTodo(todo.id)">❌</button>
+    <button class="tdBtn" (click)="deleteTodo(todo.id)">❌</button>
   </div>
 </div>
 <br>
@@ -20,5 +20,4 @@
   <option value="completed">Completed</option>
   <option value="incomplete">Incomplete</option>
 </select>
-
-<pre>{{ todos$ | async | json }}</pre>
+</div>

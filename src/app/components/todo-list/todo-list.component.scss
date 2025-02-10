@@ -1,9 +1,20 @@
+.all-app{
+  display: flex;
+  background-color: brown;
+  align-items: center;
+  justify-content: center;
+  width:100vw;
+  height:100vh;
+  display: flex;
+  position: fixed;
+}
+
 .todo-item {
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #79e3f3;
     margin: 5px 0;
     border-radius: 5px;
     background-color: #f9f9f9;
@@ -11,12 +22,12 @@
   
   .completed {
     text-decoration: line-through;
-    color: gray;
+    color: rgb(50, 191, 247);
   }
   
   button {
     background-color: red;
-    color: white;
+    color: rgb(10, 199, 237);
     border: none;
     padding: 5px 10px;
     cursor: pointer;
@@ -26,4 +37,5 @@
   button:hover {
     background-color: darkred;
   }
+
   
